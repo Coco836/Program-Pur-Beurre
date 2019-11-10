@@ -11,5 +11,5 @@ The intention behind Pur Beurre request is to create a program that interacts wi
     - pip install requests
 - Creation of the data base named "__pur_beurre__".
 - Create a class named "__Category__" in data base. This class has two attributes:
-    - __id_category__, which corresponds to the index of each category of products. This attribute allows an exclusive number to be generated automatically everytime a new record is inserted into the table.
+    - __id__, which corresponds to the index of each category of products. This attribute allows an exclusive number to be generated automatically everytime a new record is inserted into the table.
     - __name__, which simply corresponds to the name of each category of products.
