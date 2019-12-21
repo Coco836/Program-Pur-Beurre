@@ -8,6 +8,9 @@ The intention behind Pur Beurre request is to create a program that interacts wi
 - Configuration of the software under Windows 10 and connection to MySQL (host, username and password).
 - Installing Python Modules:
     - Ref file '__requirements.txt__'
+- How to run the program:
+    1. Run file 'populate_tables.py'
+    2. Run file 'interface.py'
 
 #### Database
 - Creation of the database named "__pur_beurre__".
