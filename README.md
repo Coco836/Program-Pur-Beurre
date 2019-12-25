@@ -9,8 +9,8 @@ The intention behind Pur Beurre request is to create a program that interacts wi
 - Installing Python Modules:
     - __pip install -r requirements.txt__
 - How to run the program:
-    1. Run file __'populate_tables.py <user> [passwd]__'
-    2. Run file __'interface.py <user> [passwd]'__
+    1. Run file __'populate_tables.py <<user>> [passwd]__'
+    2. Run file __'interface.py <<user>> [passwd]'__
 
 #### Database
 - Creation of the database named "__pur_beurre__".
