@@ -1,9 +1,9 @@
 # -*- coding : utf8 -*-
 
-create_db =	"""CREATE DATABASE pur_beurre_1 CHARACTER SET 'utf8';"""
+create_db =	"""CREATE DATABASE IF NOT EXISTS pur_beurre CHARACTER SET 'utf8';"""
 
 create_category	= (
-                   """CREATE TABLE Category (
+                   """CREATE TABLE IF NOT EXISTS Category (
                    id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
                    name VARCHAR (200) NOT NULL,
                    PRIMARY KEY (id))
@@ -11,18 +11,19 @@ create_category	= (
 )
 
 create_product = (
-                  """CREATE TABLE Product (
+                  """CREATE TABLE IF NOT EXISTS Product (
                   id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
                   name VARCHAR (200) NOT NULL UNIQUE,
                   description TEXT,
                   url VARCHAR (900) NOT NULL,
                   nutrition_grade VARCHAR (5),
+                  favorites BOOLEAN,
                   PRIMARY KEY (id))
                   ENGINE=INNODB;"""
 )
 
 create_shop = (
-               """CREATE TABLE Shop (
+               """CREATE TABLE IF NOT EXISTS Shop (
 	           id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
                name VARCHAR (200) NOT NULL,
                PRIMARY KEY (id))
@@ -30,7 +31,7 @@ create_shop = (
 )
 
 create_link_prod_cat =	(
-                         """CREATE TABLE Link_prod_cat (
+                         """CREATE TABLE IF NOT EXISTS Link_prod_cat (
                          id_category SMALLINT UNSIGNED NOT NULL,
                          id_product SMALLINT UNSIGNED NOT NULL,
                          PRIMARY KEY (id_category, id_product),
@@ -43,7 +44,7 @@ create_link_prod_cat =	(
 
 
 create_link_prod_shop =	(
-                         """CREATE TABLE Link_prod_shop (
+                         """CREATE TABLE IF NOT EXISTS Link_prod_shop (
                          id_product SMALLINT UNSIGNED NOT NULL,
                          id_shop SMALLINT UNSIGNED NOT NULL,
                          PRIMARY KEY (id_product, id_shop),

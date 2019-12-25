@@ -7,10 +7,10 @@ The intention behind Pur Beurre request is to create a program that interacts wi
 - Installation of MySQL version 8.0 via the command prompt.
 - Configuration of the software under Windows 10 and connection to MySQL (host, username and password).
 - Installing Python Modules:
-    - Ref file '__requirements.txt__'
+    - __pip install -r requirements.txt__
 - How to run the program:
-    1. Run file 'populate_tables.py'
-    2. Run file 'interface.py'
+    1. Run file __'populate_tables.py <user> [passwd]__'
+    2. Run file __'interface.py <user> [passwd]'__
 
 #### Database
 - Creation of the database named "__pur_beurre__".
